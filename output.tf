@@ -11,7 +11,7 @@ output "ecs_service_output" {
 }
 
 output "vpc_output" {
-  value = aws_vpc.demo-tf.name
+  value = aws_vpc.demo-tf.id
 }
 
 output "traget_group" {
