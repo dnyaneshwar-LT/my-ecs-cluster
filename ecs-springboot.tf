@@ -1,4 +1,4 @@
-# NGINX Service
+# Springboot Service
 resource "aws_ecs_service" "springboot" {
   name            = "springboot"
   cluster         = aws_ecs_cluster.demo.id

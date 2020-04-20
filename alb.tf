@@ -7,10 +7,6 @@ resource "aws_alb" "demo_eu_alb" {
   idle_timeout    = 600
 }
 
-output "alb_output" {
-  value = aws_alb.demo_eu_alb.dns_name
-}
-
 resource "aws_alb_listener" "front_end" {
   load_balancer_arn = aws_alb.demo_eu_alb.id
   port              = "80"
